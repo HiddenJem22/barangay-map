@@ -1,18 +1,13 @@
 {
   "name": "Barangay Filled Map",
-  "organization": "Your Org",
-  "description": "Displays barangay boundaries from GeoJSON with color scale by metric",
-  "logoUrl": "https://www.gstatic.com/visualization/geo_charts/geo_chart_icon.png",
-  "supports": {
-    "dimensions": true,
-    "metrics": true
+  "organization": "HiddenJem22",
+  "description": "Custom barangay map visualization for Looker Studio",
+  "resources": {
+    "js": [
+      "https://hiddenjem22.github.io/barangay-map/script.js"
+    ],
+    "css": []
   },
-  "components": [
-    {
-      "id": "barangay-map",
-      "name": "Barangay GeoJSON Map",
-      "description": "A custom GeoJSON filled map for Looker Studio",
-      "file": "index.html"
-    }
-  ]
+  "logoUrl": "https://hiddenjem22.github.io/barangay-map/logo.png",
+  "version": "1.0.0"
 }
