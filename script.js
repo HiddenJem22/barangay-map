@@ -6,7 +6,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // <-- REPLACE this with the public URL of your geojson file on GitHub Pages -->
-const geojsonURL = 'GEOJSON_URL_HERE';
+const geojsonURL = 'https://github.com/HiddenJem22/barangay-map/blob/main/Barangay_Boundary.geojson';
 
 // Color scale: adjust thresholds to your metric
 function getColor(value) {
@@ -46,4 +46,5 @@ fetch(geojsonURL)
   .catch(err => {
     console.error('Error loading GeoJSON:', err);
     document.getElementById('map').innerHTML = '<p style="padding:12px">Error loading GeoJSON. Check console.</p>';
+
   });
